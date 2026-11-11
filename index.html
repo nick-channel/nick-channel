@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nick Channel</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font-family: Georgia, "Iowan Old Style", serif; color: #102033; background: #f6f4ef; }
+    header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1.25rem 0; }
+    header { padding-top: 2rem; }
+    h1 { font-size: 2.4rem; line-height: 1.1; margin: 0.2rem 0 0.6rem; }
+    h2 { font-size: 1.35rem; margin: 2rem 0 0.5rem; }
+    p, li { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 1.05rem; line-height: 1.55; }
+    a { color: #0b3a66; }
+    .mark { letter-spacing: 0.08em; text-transform: uppercase; font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 0.78rem; color: #6b5a32; }
+    .links { font-family: "Avenir Next", "Segoe UI", sans-serif; }
+    .links a { margin-right: 1.25rem; }
+    footer { padding-bottom: 3rem; font-family: "Avenir Next", "Segoe UI", sans-serif; color: #4d5b6a; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="mark">Nick Channel</p>
+    <h1>Upload your own videos to your own TikTok account.</h1>
+    <p class="links">
+      <a href="./privacy/">Privacy Policy</a>
+      <a href="./terms/">Terms of Service</a>
+    </p>
+  </header>
+  <main>
+    <p>Nick Channel is a desktop application that runs on its owner’s computer. It connects to the owner’s TikTok account and uploads videos that the owner chooses from that computer. It is not a service for managing other people’s accounts.</p>
+
+    <h2>What the app does</h2>
+    <ol>
+      <li>The owner starts sign-in in Nick Channel.</li>
+      <li>TikTok Login Kit opens TikTok’s own authorization page. The owner logs in to TikTok and chooses whether to allow the requested permissions.</li>
+      <li>The owner selects a video file stored on the computer.</li>
+      <li>The owner chooses one of two uploads: a direct post to that same TikTok profile, or a draft sent to that account’s TikTok inbox for editing inside TikTok.</li>
+    </ol>
+
+    <h2>Permissions it requests</h2>
+    <ul>
+      <li><strong>Basic profile.</strong> TikTok open ID, avatar, and display name. Nick Channel uses these only to show which account was authorized.</li>
+      <li><strong>Direct post.</strong> Permission to post a selected video to the authorized user’s own TikTok profile.</li>
+      <li><strong>Draft upload.</strong> Permission to send a selected video to the authorized user’s TikTok inbox as a draft.</li>
+    </ul>
+    <p>Nick Channel does not request permission to read the account’s video list, send messages, follow accounts, or comment. It does not change the TikTok account’s privacy setting. Until TikTok approves the developer app, TikTok limits direct posts from this app to private viewing, and only while the TikTok account is private.</p>
+
+    <h2>Where it runs</h2>
+    <p>Sign-in returns to a local address on the same computer, <code>http://127.0.0.1:*/callback/</code>. The app exchanges the authorization code on that computer. A video file leaves the computer only when the owner starts an upload, and it is sent to TikTok for that upload.</p>
+
+    <h2>Policies</h2>
+    <p>The Privacy Policy explains what account and video information Nick Channel handles. The Terms of Service explain the owner’s responsibility for the videos and how the app may be used.</p>
+    <p class="links">
+      <a href="./privacy/">Read the Privacy Policy</a>
+      <a href="./terms/">Read the Terms of Service</a>
+    </p>
+  </main>
+  <footer>
+    <p>Nick Channel is an independent desktop app. It is not made by TikTok or ByteDance.</p>
+  </footer>
+</body>
+</html>
